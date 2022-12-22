@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
 
 	@GetMapping("/products/{prodNo}")
-	public String home(@PathVariable("prodNo") String prodNo) {
+	public String home(@PathVariable("prodNo") int prodNo) {
 		System.out.println("Fetching Product Details....."+prodNo);
 		return "Feching Product details for: "+prodNo;
 	}
